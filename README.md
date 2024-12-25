@@ -1,6 +1,6 @@
 # Kubernetes RBAC Tutorial
 
-This repository contains the starter projects for the Kubernetes RBAC Tutorial on YouTube.
+This repository contains the starter code for the Kubernetes RBAC Tutorial on YouTube.
 
 ## API Calls
 
