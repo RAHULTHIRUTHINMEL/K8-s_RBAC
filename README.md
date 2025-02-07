@@ -1,6 +1,6 @@
 # Kubernetes RBAC Tutorial
 
-This repository contains all the code needed to follow along with our YouTube guide: [![Watch the Tutorial](https://img.shields.io/badge/Watch-Tutorial-red?logo=youtube&style=for-the-badge)](https://youtu.be/hWj4y3Ok9Tg)
+This repository contains all the code needed to follow along with our YouTube guide: [Kubernetes RBAC Tutorial on YouTube](https://youtu.be/hWj4y3Ok9Tg)
 
 ## API Calls
 
