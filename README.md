@@ -47,3 +47,6 @@ To verify, you can get all grades with:
 ```bash
 curl -k https://localhost:<port>/grades -H "Authorization: Bearer $TOKEN"
 ```
+## Kubernetes Training
+
+If you found this guide helpful, check out our [Kubernetes Training course](https://kubernetestraining.io/)
