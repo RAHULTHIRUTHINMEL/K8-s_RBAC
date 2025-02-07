@@ -1,6 +1,6 @@
 # Kubernetes RBAC Tutorial
 
-This repository contains all the code needed to follow along with our YouTube guide: [Kubernetes RBAC Tutorial on YouTube](https://youtu.be/hWj4y3Ok9Tg).
+This repository contains all the code needed to follow along with our YouTube guide: [![Kubernetes RBAC Tutorial](https://img.youtube.com/vi/hWj4y3Ok9Tg/0.jpg)](https://youtu.be/hWj4y3Ok9Tg)
 
 ## API Calls
 
