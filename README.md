@@ -45,7 +45,7 @@ curl -k -X POST https://localhost:31000/grades \
 
 To verify, you can get all grades with:
 ```bash
-curl -k https://localhost:<port>/grades -H "Authorization: Bearer $TOKEN"
+curl -k https://localhost:31000/grades -H "Authorization: Bearer $TOKEN"
 ```
 ## Kubernetes Training
 
