@@ -47,6 +47,6 @@ To verify, you can get all grades with:
 ```bash
 curl -k https://localhost:31000/grades -H "Authorization: Bearer $TOKEN"
 ```
-## Kubernetes Training
+## Become a Cloud and DevOps Engineer
 
-If you found this guide helpful, check out our [Kubernetes Training course](https://kubernetestraining.io/)
+Learn every tool that matters: https://rayanslim.com
