@@ -8,6 +8,6 @@ spec:
   selector:
     app: grade-submission
   ports:
-  - port: 3000
-    targetPort: 3000
+  - port: 8443    # This is the port exposed by the kube-rbac-proxy   
+    targetPort: https
     nodePort: 31000

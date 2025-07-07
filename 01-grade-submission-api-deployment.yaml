@@ -15,8 +15,19 @@ spec:
       labels:
         app: grade-submission
     spec:
+      serviceAccountName: grade-proxy  # Use the service account created for kube-rbac-proxy
       containers:
       - name: grade-submission-api
         image: rslim087/kubernetes-course-grade-submission-api:stateless
         ports:
           - containerPort: 3000
+      - name: kube-rbac-proxy
+        image: gcr.io/kubebuilder/kube-rbac-proxy:v0.14.0
+        args:
+          - "--secure-listen-address=0.0.0.0:8443"      #https port for the kube-rbac-proxy(happens behind- tls and certificate)
+          - "--upstream=http://127.0.0.1:3000/"
+          - "--logtostderr=true"   
+          - "--v=10"  
+        ports:
+        - containerPort: 8443
+          name: https

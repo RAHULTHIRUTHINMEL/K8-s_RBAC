@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ServiceAccount   #badge: service-account fro kube rbac-proxy
+metadata:
+  name: grade-proxy
+  namespace: grade-demo
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: grade-submission-proxy-binding
+subjects:
+- kind: ServiceAccount #who gets identity
+  name: grade-proxy # Name is case sensitive
+  namespace: grade-demo
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin # This role grants full access to the cluster, which is not recommended for production use.
+  # Use a more restrictive role in production environments.
+  apiGroup: rbac.authorization.k8s.io
+
