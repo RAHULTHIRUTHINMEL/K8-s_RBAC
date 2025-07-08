@@ -15,7 +15,7 @@ spec:
       labels:
         app: grade-submission
     spec:
-      serviceAccountName: grade-proxy  # Use the service account created for kube-rbac-proxy
+      serviceAccountName: grade-service-proxy  # Use the service account created for kube-rbac-proxy
       containers:
       - name: grade-submission-api
         image: rslim087/kubernetes-course-grade-submission-api:stateless

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ServiceAccount   #badge: service-account
 metadata:
-  name: grade-sa
+  name: grade-service-account
   namespace: grade-demo
 
 ---
@@ -11,7 +11,7 @@ metadata:
   name: grade-submission-binding
 subjects:
 - kind: ServiceAccount #who gets identity
-  name: grade-sa # Name is case sensitive
+  name: grade-service-account # Name is case sensitive
   namespace: grade-demo
 roleRef:
   kind: ClusterRole

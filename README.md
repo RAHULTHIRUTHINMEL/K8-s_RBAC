@@ -20,6 +20,14 @@ still ater trying to curl -k https://localhost:31000/grades -H "Authorization: B
 
 ---continued.
 
+
+in the second part we have modified the 05-rbac.....yaml to create our custom cluster role and cluster role binding. 
+
+
+that might be deprecated in the newly committed file. 
+
+for insights watch this video https://www.youtube.com/watch?v=hWj4y3Ok9Tg&t=321s
+
 ## API Calls
 
 Here are commands that you can use to add grades to the Grade Submission API. **Windows Users should use Git Bash**.
